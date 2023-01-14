@@ -1,0 +1,146 @@
+.filter-mb {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.play {
+  margin-top: -1.5rem;
+  rotate: 0deg;
+}
+
+.gaming {
+  opacity: 0.5;
+  position: absolute;
+  top: -4.5rem;
+  left: 9.4rem;
+}
+
+.movies {
+  opacity: 0.5;
+  position: absolute;
+  top: -4.5rem;
+  left: 16.3rem;
+}
+.expos {
+  opacity: 0.5;
+  position: absolute;
+  top: -1.2rem;
+  left: 22.5rem;
+}
+.kids {
+  opacity: 0.5;
+  position: absolute;
+  top: 4.8rem;
+  left: 24.7rem;
+}
+.concerts {
+  opacity: 0.5;
+  position: absolute;
+  top: 11.5rem;
+  left: 24rem;
+}
+.outdoors {
+  opacity: 0.5;
+  position: absolute;
+  top: 15.8rem;
+  left: 18.5rem;
+}
+.music {
+  opacity: 0.5;
+  position: absolute;
+  top: 19rem;
+  left: 13rem;
+}
+.nightout {
+  opacity: 0.5;
+  position: absolute;
+  top: 17.3rem;
+  left: 6.5rem;
+}
+.sports {
+  opacity: 0.5;
+  position: absolute;
+  top: 12.2rem;
+  left: 2rem;
+}
+.theatre {
+  opacity: 0.5;
+  position: absolute;
+  top: 6rem;
+  left: 1.3rem;
+}
+.tastings {
+  opacity: 0.5;
+  position: absolute;
+  top: -0.5rem;
+  left: 3.5rem;
+}
+
+.tastings1 {
+  opacity: 1;
+  position: absolute;
+  top: -0.5rem;
+  left: 3.5rem;
+}
+
+@media (min-width: 375px) {
+  .gaming {
+    position: absolute;
+    top: -4.5rem;
+    left: 11.4rem;
+  }
+
+  .movies {
+    position: absolute;
+    top: -5rem;
+    left: 18.3rem;
+  }
+  .expos {
+    position: absolute;
+    top: -1.2rem;
+    left: 24.5rem;
+  }
+  .kids {
+    position: absolute;
+    top: 4.3rem;
+    left: 27.7rem;
+  }
+  .concerts {
+    position: absolute;
+    top: 11rem;
+    left: 27rem;
+  }
+  .outdoors {
+    position: absolute;
+    top: 15.8rem;
+    left: 22rem;
+  }
+  .music {
+    position: absolute;
+    top: 19rem;
+    left: 16.5rem;
+  }
+  .nightout {
+    position: absolute;
+    top: 18rem;
+    left: 9.5rem;
+  }
+  .sports {
+    position: absolute;
+    top: 13.5rem;
+    left: 4.5rem;
+  }
+  .theatre {
+    position: absolute;
+    top: 7rem;
+    left: 3.5rem;
+  }
+  .tastings {
+    position: absolute;
+    top: 0.5rem;
+    left: 5.5rem;
+  }
+}

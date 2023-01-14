@@ -1,0 +1,96 @@
+.signup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100vh;
+    background-color: #1F0A27;
+    z-index: 1;
+}
+.signup_close{
+    border-bottom: 1px solid #352F3B;
+}
+
+.signup_btn{
+    background-color: inherit;
+    border: 0;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+.signup_btn img{
+    background-color: inherit;
+    margin: 1.5rem 0 0 2.2rem;
+}
+.signup_close{
+    border-bottom: 1px solid #352F3B;
+}
+
+/*  */
+.signup_home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.signup_group_gr{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.signup_group_gr h3{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #A790AD;
+    }
+.signup_group_gr button{
+        color: #D76A43;
+        background-color: inherit;
+        border: none;
+        font-family: 'Montserrat';
+}
+.signup_title{
+    /* text-align: center; */
+    color: #D3C0D8;
+    font-size: 2.4rem;
+    font-family: 'Montserrat';
+    margin-top: 56px;
+}
+.signup_home_inputs{
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 1rem;
+    /* padding: 25px; */
+}
+.signup_home_inputs input{
+    width: 268px;
+    height: 40px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(167, 144, 173, 0.51);
+    border-radius: 4px;
+    background-color: #1F0A27;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.signup_home_inputs input::placeholder{
+font-size: 14px;
+color: #614E67;
+padding-left: 5px;
+}
+/*  */
+.signup_group_gr2{
+    max-width: 225px;
+    margin: 2rem auto;
+}
+.signup_group_gr2 h3{
+    font-family: 'Montserrat';
+    font-weight: 400;
+     color: #A790AD;
+     font-size: 1rem;
+    }
+.signup_group_gr2 button{
+        color: #D76A43;
+        background-color: inherit;
+        border: none;
+        font-family: 'Montserrat';
+        font-size: 1rem;
+}

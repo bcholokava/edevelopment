@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Mobile 320PX */
+
+.header-mb {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 4.2rem;
+  background-color: #0d0714;
+}
+
+.icon-mb-wrp {
+  display: flex;
+  gap: 1.7rem;
+  padding: 1.7rem 2.2rem 0.6rem;
+}
+.icon-mb-wrp_btn {
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+/* Navigation MB Container */
+.mbnav-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  margin-top: -20rem;
+  grid-auto-columns: auto;
+  padding-left: 3rem;
+  left: 0;
+  width: 100%;
+  height: 80rem;
+  z-index: 1;
+  background: linear-gradient(180deg, #0d0714 0%, #2d0d35 100%);
+  overflow: hidden;
+}
+.mbnav-container h2 {
+  font-size: 2rem;
+
+  color: #a790ad;
+}
+
+/* Categories Styles */
+
+.mbnav-a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #a790ad;
+  width: 5rem;
+  height: 5rem;
+}
+
+.b {
+  margin-top: 5rem;
+  left: 3rem;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}

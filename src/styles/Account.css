@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+.account{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+     width: 100%; 
+    height: 100vh;
+    background-color: #1F0A27;
+    z-index: 10;
+}
+.account_close{
+    padding: 3rem 0 1rem 0;
+    border-bottom: 1px solid #352F3B;
+}
+.account_btn{
+    margin-left: 3.2rem;
+    background-color: inherit;
+    border: 0;
+}
+.account_btn img{
+    background-color: inherit;
+}
+.account_home{
+    padding:3rem 3rem 0rem 3rem;
+    font-family: 'Montserrat';
+    color: #A790AD;
+}
+.account_home h3{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
+.account_home p{
+    font-weight: 300;
+    font-size: 16px;
+}
+.account_home_div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.account_home_div_img{
+    color: #A790AD;
+    width: 6px;
+    height: 12px;
+}
