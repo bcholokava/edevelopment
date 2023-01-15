@@ -1,6 +1,3 @@
-import frLine from "../imagesmb/lines/line1.svg";
-import secLine from "../imagesmb/lines/line2.svg";
-import thLine from "../imagesmb/lines/line1.svg";
 import "../styles/lines.css";
 import anime from "animejs/lib/anime.es.js";
 

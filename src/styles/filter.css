@@ -152,6 +152,13 @@
 }
 
 @media (min-width: 375px) {
+  .filter-mb {
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
   .gaming {
     position: absolute;
     top: -4.6rem;
