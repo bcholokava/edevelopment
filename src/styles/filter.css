@@ -36,7 +36,7 @@
   top: 4.8rem;
   left: 24.7rem;
 }
-.concerts {
+.edu {
   opacity: 0.5;
   position: absolute;
   top: 11.5rem;
@@ -79,11 +79,76 @@
   left: 3.5rem;
 }
 
-.special {
-  opacity: 0;
+/* OPACITY CLASSES FOR FILTER ICONS */
+.gamingOP {
+  opacity: 1;
+  position: absolute;
+  top: -4.5rem;
+  left: 9.4rem;
+}
+
+.moviesOP {
+  opacity: 1;
+  position: absolute;
+  top: -4.5rem;
+  left: 16.3rem;
+}
+.exposOP {
+  opacity: 1;
+  position: absolute;
+  top: -1.2rem;
+  left: 22.5rem;
+}
+.kidsOP {
+  opacity: 1;
+  position: absolute;
+  top: 4.8rem;
+  left: 24.7rem;
+}
+.eduOP {
+  opacity: 1;
+  position: absolute;
+  top: 11.5rem;
+  left: 24rem;
+}
+.outdoorsOP {
+  opacity: 1;
+  position: absolute;
+  top: 15.8rem;
+  left: 18.5rem;
+}
+.musicOP {
+  opacity: 1;
+  position: absolute;
+  top: 19rem;
+  left: 13rem;
+}
+.nightoutOP {
+  opacity: 1;
+  position: absolute;
+  top: 17.3rem;
+  left: 6.5rem;
+}
+
+.tastingsOP {
+  opacity: 1;
   position: absolute;
   top: -0.5rem;
   left: 3.5rem;
+}
+
+.theatOP {
+  opacity: 1;
+  position: absolute;
+  top: 6rem;
+  left: 1.3rem;
+}
+
+.sportsOP {
+  opacity: 1;
+  position: absolute;
+  top: 12.2rem;
+  left: 2rem;
 }
 
 @media (min-width: 375px) {

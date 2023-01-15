@@ -17,7 +17,7 @@ const Signup = ({ showAccNav }) => {
 
         <div className="signup_group_gr">
           <h3>Already have an account?</h3>
-          <Link to="/account">
+          <Link to="/login">
             <button>Log in</button>
           </Link>
         </div>
