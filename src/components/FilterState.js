@@ -6,7 +6,7 @@ const FilterState = ({ src, name }) => {
     <img
       onClick={() => setActive((prev) => !prev)}
       src={src}
-      className={active ? name[0] : name[1]}
+      className={active ? name[1] : name[0]}
     ></img>
   );
 };

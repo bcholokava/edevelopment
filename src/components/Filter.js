@@ -10,6 +10,7 @@ import I from "../imagesmb/filters/expos.png";
 import J from "../imagesmb/filters/movies.png";
 import K from "../imagesmb/filters/gaming.png";
 import L from "../imagesmb/filters/play.png";
+import M from "../imagesmb/filters/playbtn.png";
 import "../styles/filter.css";
 import { useRef, useEffect, useState } from "react";
 import FilterState from "./FilterState";
@@ -70,23 +71,19 @@ const filterImgs = [
     src: K,
     name: ["gaming", "gamingOP"],
   },
-  // {
-  //   id: 12,
-  //   src: L,
-  //   name: ["play"],
-  // },
 ];
 const Filter = (props) => {
-  // const iterateImg = filterImgs.map((img) => {
-  //   return <img src={img.src} key={img.id} className={img.name} />;
-  // });
-
   return (
     <div>
       <div className="filter-mb">
         {filterImgs.map((img) => {
           return <FilterState src={img.src} key={img.id} name={img.name} />;
         })}
+
+        <img className="play" src={L} />
+        <a href="#" className="playbtn">
+          <img src={M} />
+        </a>
       </div>
       ;
     </div>

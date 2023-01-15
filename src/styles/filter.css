@@ -7,7 +7,7 @@
 }
 
 .play {
-  margin-top: -1.5rem;
+  margin-top: 1.5rem;
   rotate: 0deg;
 }
 
@@ -154,7 +154,7 @@
 @media (min-width: 375px) {
   .gaming {
     position: absolute;
-    top: -4.5rem;
+    top: -4.6rem;
     left: 11.4rem;
   }
 
@@ -173,10 +173,10 @@
     top: 4.3rem;
     left: 27.7rem;
   }
-  .concerts {
+  .edu {
     position: absolute;
-    top: 11rem;
-    left: 27rem;
+    top: 11.2rem;
+    left: 27.5rem;
   }
   .outdoors {
     position: absolute;
@@ -190,12 +190,12 @@
   }
   .nightout {
     position: absolute;
-    top: 18rem;
-    left: 9.5rem;
+    top: 17.5rem;
+    left: 9.8rem;
   }
   .sports {
     position: absolute;
-    top: 13.5rem;
+    top: 13.2rem;
     left: 4.5rem;
   }
   .theatre {
@@ -204,6 +204,71 @@
     left: 3.5rem;
   }
   .tastings {
+    position: absolute;
+    top: 0.5rem;
+    left: 5.5rem;
+  }
+
+  .playbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  /* OPACITY CLASSES FOR FILTER ICONS */
+  .gamingOP {
+    position: absolute;
+    top: -4.6rem;
+    left: 11.4rem;
+  }
+
+  .moviesOP {
+    position: absolute;
+    top: -5rem;
+    left: 18.3rem;
+  }
+  .exposOP {
+    position: absolute;
+    top: -1.2rem;
+    left: 24.5rem;
+  }
+  .kidsOP {
+    position: absolute;
+    top: 4.3rem;
+    left: 27.7rem;
+  }
+  .eduOP {
+    position: absolute;
+    top: 11.2rem;
+    left: 27.5rem;
+  }
+  .outdoorsOP {
+    position: absolute;
+    top: 15.8rem;
+    left: 22rem;
+  }
+  .musicOP {
+    position: absolute;
+    top: 19rem;
+    left: 16.5rem;
+  }
+  .nightoutOP {
+    position: absolute;
+    top: 17.5rem;
+    left: 9.8rem;
+  }
+  .sportsOP {
+    position: absolute;
+    top: 13.2rem;
+    left: 4.5rem;
+  }
+  .theatOP {
+    position: absolute;
+    top: 7rem;
+    left: 3.5rem;
+  }
+  .tastingsOP {
     position: absolute;
     top: 0.5rem;
     left: 5.5rem;
