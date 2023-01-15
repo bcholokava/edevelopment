@@ -12,34 +12,90 @@ import K from "../imagesmb/filters/gaming.png";
 import L from "../imagesmb/filters/play.png";
 import "../styles/filter.css";
 import { useRef, useEffect, useState } from "react";
-import { set } from "animejs";
+import { click } from "@testing-library/user-event/dist/click";
 
-const Filter = () => {
-  const [style, setStyle] = useState(false);
-  const changeOpacity = (event) => {
-    setStyle(!style);
+const filterImgs = [
+  {
+    id: 1,
+    src: A,
+    name: "tastings",
+  },
+  {
+    id: 2,
+    src: B,
+    name: "theatre",
+  },
+  {
+    id: 3,
+    src: C,
+    name: "sports",
+  },
+  {
+    id: 4,
+    src: D,
+    name: "nightout",
+  },
+  {
+    id: 5,
+    src: E,
+    name: "music",
+  },
+  {
+    id: 6,
+    src: F,
+    name: "outdoors",
+  },
+  {
+    id: 7,
+    src: G,
+    name: "concerts",
+  },
+  {
+    id: 8,
+    src: H,
+    name: "kids",
+  },
+  {
+    id: 9,
+    src: I,
+    name: "expos",
+  },
+  {
+    id: 10,
+    src: J,
+    name: "movies",
+  },
+  {
+    id: 11,
+    src: K,
+    name: "gaming",
+  },
+  {
+    id: 12,
+    src: L,
+    name: "play",
+  },
+];
+const Filter = (props) => {
+  const [classN, setClassN] = useState(null);
+  const handleClick = (image) => {
+    setClassN(image);
   };
 
-  return (
-    <div className="filter-mb">
-      <img className="play" src={L} alt="Play button icon" />
-      <img className="gaming" src={K} alt="Play button icon" />
-      <img className="expos" src={I} alt="Play button icon" />
-      <img className="kids" src={H} alt="Play button icon" />
-      <img className="movies" src={J} alt="Play button icon" />
-      <img className="concerts" src={G} alt="Play button icon" />
-      <img className="outdoors" src={F} alt="Play button icon" />
-      <img className="music" src={E} alt="Play button icon" />
-      <img className="nightout" src={D} alt="Play button icon" />
-      <img className="sports" src={C} alt="Play button icon" />
-      <img className="theatre" src={B} alt="Play button icon" />
+  const iterateImg = filterImgs.map((img) => {
+    return (
       <img
-        style={{ opacity: style ? 1 : 0.6 }}
-        onClick={changeOpacity}
-        className="tastings"
-        src={A}
-        alt="Play button icon"
+        onClick={handleClick}
+        src={img.src}
+        key={img.id}
+        className={img.name}
       />
+    );
+  });
+
+  return (
+    <div>
+      <div className="filter-mb"> {iterateImg}</div>;
     </div>
   );
 };
