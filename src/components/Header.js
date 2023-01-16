@@ -4,7 +4,6 @@ import searchbtn from "../imagesmb/icons/searchbtn.png";
 import navbtn from "../imagesmb/icons/navbtn.png";
 import mapbtn from "../imagesmb/icons/mapbtn.png";
 import Mobilenav from "./Mobilenav";
-
 import Account from "./Account.js";
 import { useState } from "react";
 import Login from "./Login";
@@ -23,6 +22,8 @@ const Header = () => {
     console.log("Beka");
   };
 
+  // For Map
+
   return (
     <>
       <div>
@@ -39,7 +40,12 @@ const Header = () => {
 
           <div className="icon-mb-wrp">
             <img src={navbtn} onClick={mobileNavHandler} />
-            <img src={mapbtn} />
+            <img
+              src={mapbtn}
+              onClick={() => {
+                console.log("beka");
+              }}
+            />
           </div>
         </div>
         {showAcc && <Login showAccNav={showAccNav} />}
