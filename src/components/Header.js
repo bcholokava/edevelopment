@@ -44,7 +44,6 @@ const Header = () => {
             />
           </div>
         </div>
-        {showAcc && <Login showAccNav={showAccNav} />}
       </div>
     
     </>
