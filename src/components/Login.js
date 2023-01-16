@@ -8,7 +8,7 @@ const Login = ({ showAccNav }) => {
     <div className='login'>
         <div className="login_close">
         <button className="login_btn" onClick={showAccNav}>
-          <img className="login_btn_img" src={CloseBtn} alt="close" />
+        <Link to='/'><img className="login_btn_img" src={CloseBtn} alt="close" /></Link>
         </button>
       </div>
     <div className="login_home">
@@ -24,10 +24,14 @@ const Login = ({ showAccNav }) => {
 
     <div className='login_group'>
       <button className='btn_btn'>Log In</button>
+      
+
+     
       <div className='login_group_gr'>
         <h3>Don’t have an account?</h3>
         <Link to='/signup'><button>Sign Up</button></Link>
       </div>
+      
         <div className='login_line'>
           <Lines/>
           </div>

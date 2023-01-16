@@ -7,6 +7,7 @@ import Mobilenav from "./Mobilenav";
 import Account from "./Account.js";
 import { useState } from "react";
 import Login from "./Login";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // For Mobile Navigation
@@ -15,28 +16,23 @@ const Header = () => {
   const mobileNavHandler = () => {
     setShowMbNav(!showMbNav);
   };
-  // For Account navigation
-  const [showAcc, setShowAcc] = useState(false);
-  const showAccNav = () => {
-    setShowAcc(!showAcc);
-    console.log("Beka");
-  };
+  
 
   // For Map
 
   return (
     <>
-      <div>
-        <div className="header-mb">
-          <div className="icon-mb-wrp">
-            <button className="icon-mb-wrp_btn">
-              <img onClick={showAccNav} src={accbtn} />
-            </button>
-            <img className="searchbtn-mb" src={searchbtn} />
-          </div>
-          <div>
-            {showMbNav && <Mobilenav mobileNavHandler={mobileNavHandler} />}
-          </div>
+    <div>
+      <div className="header-mb">
+        <div className="icon-mb-wrp">
+          <button className="icon-mb-wrp_btn">
+            <Link to='/login'><img  src={accbtn} /></Link>
+          </button>
+          <img className="searchbtn-mb" src={searchbtn} />
+        </div>
+        <div>
+          {showMbNav && <Mobilenav mobileNavHandler={mobileNavHandler} />}
+        </div>
 
           <div className="icon-mb-wrp">
             <img src={navbtn} onClick={mobileNavHandler} />
@@ -48,8 +44,8 @@ const Header = () => {
             />
           </div>
         </div>
-        {showAcc && <Login showAccNav={showAccNav} />}
       </div>
+    
     </>
   );
 };

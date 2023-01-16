@@ -8,14 +8,12 @@ import Login from "./components/Login";
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </div>
+<Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/signup" element={<Signup/>} />
+      <Route path="/account" element={<Account/>} />
+      <Route path="/login" element={<Login/>} />
+</Routes>
   );
 }
 
