@@ -1,6 +1,3 @@
-import frLine from "../imagesmb/lines/line1.svg";
-import secLine from "../imagesmb/lines/line2.svg";
-import thLine from "../imagesmb/lines/line1.svg";
 import "../styles/lines.css";
 import anime from "animejs/lib/anime.es.js";
 
@@ -11,7 +8,7 @@ const Lines = () => {
     easing: "easeInOutSine",
     duration: 500,
     delay: function (el, i) {
-      return i * 230;
+      return i * 240;
     },
     direction: "alternate",
     loop: true,
@@ -31,44 +28,27 @@ const Lines = () => {
   return (
     <div className="lines-mb">
       <svg
-        width="320"
-        height="61"
-        viewBox="0 0 320 61"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M320 59.8685C301.175 3.80628 320.111 107.663 178.615 29.3296C37.1191 -49.0037 26.9136 59.9711 0.664786 59.8685"
-          stroke="#463C52"
-          strokeOpacity="0.58"
-        />
-      </svg>
-      <svg
-        width="320"
-        height="72"
-        viewBox="0 0 320 72"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M319.335 71.3222C286.981 38.7741 268.476 79.8852 142.604 19.3292C16.7313 -41.2269 26.2488 71.4248 -9.0003e-06 71.3222"
-          stroke="#463C52"
-          strokeOpacity="2"
-        />
-      </svg>
-
-      <svg
         className="lines"
-        width="320"
-        height="24"
-        viewBox="0 0 320 24"
+        width="377"
+        height="147"
+        viewBox="0 0 377 147"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M320 21.3129C301.175 -34.7493 160.609 43.4665 77.4782 16.8341C-5.6532 -9.79835 26.9136 21.4155 0.664786 21.3129"
+          d="M376 121.825C353.939 56.1271 189.214 147.786 91.7947 116.576C-5.62482 85.3666 32.5394 121.945 1.77907 121.825"
           stroke="#463C52"
-          strokeOpacity="0.58"
+          stroke-opacity="0.58"
+        />
+        <path
+          d="M376 69.7416C353.939 4.04374 376.13 125.751 210.314 33.9538C44.4989 -57.8429 32.5393 69.8619 1.77904 69.7416"
+          stroke="#463C52"
+          stroke-opacity="0.58"
+        />
+        <path
+          d="M375.221 146.445C337.305 108.303 315.621 156.48 168.114 85.5159C20.6069 14.5518 31.7602 146.566 0.999867 146.445"
+          stroke="#463C52"
+          stroke-opacity="0.58"
         />
       </svg>
     </div>

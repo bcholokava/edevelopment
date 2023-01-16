@@ -4,42 +4,88 @@ import C from "../imagesmb/filters/sports.png";
 import D from "../imagesmb/filters/nightout.png";
 import E from "../imagesmb/filters/music.png";
 import F from "../imagesmb/filters/outdoors.png";
-import G from "../imagesmb/filters/concerts.png";
+import G from "../imagesmb/filters/edu.png";
 import H from "../imagesmb/filters/kids.png";
 import I from "../imagesmb/filters/expos.png";
 import J from "../imagesmb/filters/movies.png";
 import K from "../imagesmb/filters/gaming.png";
 import L from "../imagesmb/filters/play.png";
+import M from "../imagesmb/filters/playbtn.png";
 import "../styles/filter.css";
 import { useRef, useEffect, useState } from "react";
-import { set } from "animejs";
+import FilterState from "./FilterState";
 
-const Filter = () => {
-  const [style, setStyle] = useState(false);
-  const changeOpacity = (event) => {
-    setStyle(!style);
-  };
-
+const filterImgs = [
+  {
+    id: 1,
+    src: A,
+    name: ["tastings", "tastingsOP"],
+  },
+  {
+    id: 2,
+    src: B,
+    name: ["theatre", "theatOP"],
+  },
+  {
+    id: 3,
+    src: C,
+    name: ["sports", "sportsOP"],
+  },
+  {
+    id: 4,
+    src: D,
+    name: ["nightout", "nightoutOP"],
+  },
+  {
+    id: 5,
+    src: E,
+    name: ["music", "musicOP"],
+  },
+  {
+    id: 6,
+    src: F,
+    name: ["outdoors", "outdoorsOP"],
+  },
+  {
+    id: 7,
+    src: G,
+    name: ["edu", "eduOP"],
+  },
+  {
+    id: 8,
+    src: H,
+    name: ["kids", "kidsOP"],
+  },
+  {
+    id: 9,
+    src: I,
+    name: ["expos", "exposOP"],
+  },
+  {
+    id: 10,
+    src: J,
+    name: ["movies", "moviesOP"],
+  },
+  {
+    id: 11,
+    src: K,
+    name: ["gaming", "gamingOP"],
+  },
+];
+const Filter = (props) => {
   return (
-    <div className="filter-mb">
-      <img className="play" src={L} alt="Play button icon" />
-      <img className="gaming" src={K} alt="Play button icon" />
-      <img className="expos" src={I} alt="Play button icon" />
-      <img className="kids" src={H} alt="Play button icon" />
-      <img className="movies" src={J} alt="Play button icon" />
-      <img className="concerts" src={G} alt="Play button icon" />
-      <img className="outdoors" src={F} alt="Play button icon" />
-      <img className="music" src={E} alt="Play button icon" />
-      <img className="nightout" src={D} alt="Play button icon" />
-      <img className="sports" src={C} alt="Play button icon" />
-      <img className="theatre" src={B} alt="Play button icon" />
-      <img
-        style={{ opacity: style ? 1 : 0.6 }}
-        onClick={changeOpacity}
-        className="tastings"
-        src={A}
-        alt="Play button icon"
-      />
+    <div>
+      <div className="filter-mb">
+        {filterImgs.map((img) => {
+          return <FilterState src={img.src} key={img.id} name={img.name} />;
+        })}
+
+        <img className="play" src={L} />
+        <a href="#" className="playbtn">
+          <img src={M} />
+        </a>
+      </div>
+      ;
     </div>
   );
 };
