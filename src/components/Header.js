@@ -9,6 +9,7 @@ import Mobilenav from "./Mobilenav";
 import Account from "./Account.js";
 import { useState } from "react";
 import Login from "./Login";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // For Mobile Navigation
@@ -17,11 +18,7 @@ const Header = () => {
   const mobileNavHandler = () => {
     setShowMbNav(!showMbNav);
   };
-  // For Account navigation
-  const [showAcc, setShowAcc] = useState(false);
-  const showAccNav = () => {
-    setShowAcc(!showAcc);
-  };
+  
 
   return (
     <>
@@ -29,7 +26,7 @@ const Header = () => {
       <div className="header-mb">
         <div className="icon-mb-wrp">
           <button className="icon-mb-wrp_btn">
-            <img onClick={showAccNav} src={accbtn} />
+            <Link to='/login'><img  src={accbtn} /></Link>
           </button>
           <img className="searchbtn-mb" src={searchbtn} />
         </div>
@@ -42,7 +39,7 @@ const Header = () => {
           <img src={mapbtn} />
         </div>
       </div>
-      {showAcc && <Login showAccNav={showAccNav} />}
+      
     </div>
     
     </>

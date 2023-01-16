@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/signup.css'
 import Lines from './Lines'
 import CloseBtn from "../imagesmb/icons/closeicon.png";
+import Home from './Home';
+import { Link } from 'react-router-dom';
 
-const Signup = ({ showAccNav }) => {
+const Signup = () => {
+ 
   return (
     <div className='signup'>
         <div className="signup_close">
-        <button className="signup_btn" onClick={showAccNav}>
-          <img className="signup_btn_img" src={CloseBtn} alt="close" />
+        <button className="signup_btn">
+          <Link to='/'><img className="signup_btn_img" src={CloseBtn} alt="close" /></Link>
         </button>
       </div>
       <div className="signup_home">
@@ -16,7 +19,7 @@ const Signup = ({ showAccNav }) => {
       {/* Inputs */}
           <div className='signup_group_gr'>
             <h3>Already have an account?</h3>
-            <button>Log In</button>
+            <Link to='/login'><button>Log In</button></Link>
           </div>
     
           <div className="signup_home_inputs">
@@ -35,7 +38,7 @@ const Signup = ({ showAccNav }) => {
             <h3>By creating an account, I agree with Eventa’s <button>Privacy Policy</button> and <button>Terms of Service.</button></h3>
           </div>
 
-          <div>
+          <div style={{marginTop:'6rem'}}>
             <button className='btn_btn'>Sign Up</button>
           </div>
 
@@ -44,7 +47,7 @@ const Signup = ({ showAccNav }) => {
           </div>
            
           </div>
-
+        
               </div>
      
 

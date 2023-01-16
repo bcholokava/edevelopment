@@ -79,7 +79,9 @@ padding-left: 5px;
 /*  */
 .signup_group_gr2{
     max-width: 225px;
-    margin: 2rem auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .signup_group_gr2 h3{
     font-family: 'Montserrat';
