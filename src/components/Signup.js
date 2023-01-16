@@ -34,16 +34,20 @@ const Signup = () => {
                 <input type="text" placeholder='Repeat password' />
               </div>
 
-              <div className='signup_group_gr2'>
-            <h3>By creating an account, I agree with Eventa’s <button>Privacy Policy</button> and <button>Terms of Service.</button></h3>
+          <div className="signup_group_gr2">
+            <h3>
+              By creating an account, I agree with Eventa’s{" "}
+              <button>Privacy Policy</button> and{" "}
+              <button>Terms of Service.</button>
+            </h3>
           </div>
 
           <div style={{marginTop:'6rem'}}>
             <button className='btn_btn'>Sign Up</button>
           </div>
 
-          <div className='login_line'>
-          <Lines/>
+          <div className="login_line">
+            <Lines />
           </div>
            
           </div>
@@ -53,7 +57,7 @@ const Signup = () => {
 
 
     </div>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;

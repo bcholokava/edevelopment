@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   padding-top: 3.7rem;
+  position: relative;
 }
 
 .bg {
   max-width: 100%;
-  height: 56.8rem;
+  height: 100vh;
   background-color: #0d0714;
 }

@@ -1,7 +1,8 @@
-
 import Home from "./components/Home";
 import Account from "./components/Account";
 import Signup from "./components/Signup";
+import Header from "./components/Header";
+import Discover from "./components/Discover";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 
