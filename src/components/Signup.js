@@ -113,7 +113,9 @@ const Signup = () => {
               </button>
             </div>
           </form>
-          <div className="login_line">{/* / <Lines /> */}</div>
+          {/* <div className="login_line">
+            / <Lines />
+          </div> */}
         </div>
       </div>
     </div>

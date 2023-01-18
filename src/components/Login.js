@@ -60,14 +60,16 @@ const Login = ({ showAccNav }) => {
               placeholder="Password"
               id="password"
             />
+          </div>
+          <div className="span-cont">
+            <button className="login_span">Forgot password?</button>
+          </div>
+          <div className="btn-cont">
             <button type="submit" className="btn_btn">
               Log In
             </button>
           </div>
         </form>
-      </div>
-      <div>
-        <button className="login_span">Forgot password?</button>
       </div>
 
       <div className="login_group">
