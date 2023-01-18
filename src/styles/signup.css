@@ -1,31 +1,3 @@
-.signup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #1f0a27;
-  z-index: 1;
-}
-.signup_close {
-  border-bottom: 0.001rem solid #352f3b;
-}
-
-.signup_btn {
-  background-color: inherit;
-  border: 0;
-  font-weight: 600;
-  padding-bottom: 0.5rem;
-}
-.signup_btn img {
-  background-color: inherit;
-  margin: 1.5rem 0 0 2.2rem;
-}
-.signup_close {
-  border-bottom: 0.001rem solid #352f3b;
-}
-
-/*  */
 .signup_home {
   display: flex;
   flex-direction: column;
@@ -49,17 +21,15 @@
   font-family: "Montserrat";
 }
 .signup_title {
-  /* text-align: center; */
+  
   color: #d3c0d8;
   font-size: 2.4rem;
   font-family: "Montserrat";
   margin-top: 5.6rem;
 }
 .signup_home_inputs {
-  /* display: flex;
-    flex-direction: column; */
-  margin-top: 1rem;
-  /* padding: 25px; */
+ margin-top: 1rem;
+  
 }
 .signup_home_inputs input {
   width: 26.8rem;
@@ -70,6 +40,8 @@
   background-color: #1f0a27;
   font-family: "Montserrat";
   font-weight: 300;
+  padding: 0 10px;
+    color: white;
 }
 .signup_home_inputs input::placeholder {
   font-size: 1.4rem;

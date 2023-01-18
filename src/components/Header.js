@@ -6,7 +6,7 @@ import mapbtn from "../imagesmb/icons/mapbtn.png";
 import Mobilenav from "./Mobilenav";
 import Account from "./Account.js";
 import { useState } from "react";
-import Login from "./Login";
+import Login from "../pages/Login";
 import { Link } from "react-router-dom";
 
 const Header = () => {

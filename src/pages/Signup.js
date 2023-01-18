@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "../styles/signup.css";
-import Lines from "./Lines";
+import Lines from "../components/Lines";
 import CloseBtn from "../imagesmb/icons/closeicon.png";
 import Home from "./Home";
 import { Link } from "react-router-dom";
 import Axios from "axios";
+import Container from '../components/Container'
 
 const Signup = () => {
   const url = "https://localhost:7198/api/Account/register";
@@ -42,27 +43,23 @@ const Signup = () => {
   }
 
   return (
-    <div className="signup">
-      <div className="signup_close">
-        <button className="signup_btn">
-          <Link to="/">
-            <img className="signup_btn_img" src={CloseBtn} alt="close" />
-          </Link>
-        </button>
-      </div>
-      <div className="signup_home">
+    
+   <Container>
+    <div className="signup_home">
         <h3 className="signup_title">Join Eventa!</h3>
-
+           {/*  */}
         <div className="signup_group_gr">
           <h3>Already have an account?</h3>
           <Link to="/login">
             <button>Log In</button>
           </Link>
         </div>
+            {/*  */}
 
-        <div className="signup_home_inputs">
+            <div className="signup_home_inputs">
           <form onSubmit={(e) => submit(e)}>
-            <div className="signup_home_input">
+
+          <div className="signup_home_input">
               <input
                 onChange={(e) => handle(e)}
                 id="firstName"
@@ -112,13 +109,24 @@ const Signup = () => {
                 Sign Up
               </button>
             </div>
-          </form>
-          {/* <div className="login_line">
-            / <Lines />
-          </div> */}
-        </div>
+
+             
+      <div>
+      <Lines />
       </div>
-    </div>
+
+
+          </form>
+
+
+
+        </div>
+        </div>
+        </Container>
+      
+      
+      
+  
   );
 };
 

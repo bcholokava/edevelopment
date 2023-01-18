@@ -1,0 +1,53 @@
+.fg-section{
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+.fg-section_div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.fg-section_h3{
+    color: #d3c0d8;
+  font-size: 2.4rem;
+  font-family: "Montserrat";
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.fg-section_div2{
+    text-align: center;
+}
+.fg-section_div2 input{
+  width: 26.8rem;
+  height: 4rem;
+  border: 0.001rem solid rgba(167, 144, 173, 0.51);
+  border-radius: 0.4rem;
+  background-color: #1f0a27;
+  font-family: "Montserrat";
+  font-weight: 300;
+  padding: 0 10px;
+  color: white;
+}
+.fg-section_div2 input::placeholder{
+  font-size: 1.4rem;
+  color: #614e67;
+  padding-left: 0.5rem;
+}
+.fg-section_div2 p{
+  font-size: 1.3rem;
+  font-family: "Montserrat";
+  color: #A790AD;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+}
+.fg-section_div2 button{
+    width: 10rem;
+  height: 2.8rem;
+  border: none;
+  background-color: #A790AD;
+  border-radius: 5rem;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+.fg-section_lines{
+  margin-top: 14rem;
+}

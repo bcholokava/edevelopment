@@ -1,4 +1,4 @@
-import "../styles/lines.css";
+// import "../styles/lines.css";
 import anime from "animejs/lib/anime.es.js";
 
 const Lines = () => {

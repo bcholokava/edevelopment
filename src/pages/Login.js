@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/Login.css";
 import CloseBtn from "../imagesmb/icons/closeicon.png";
-import Lines from "./Lines";
+import Lines from "../components/Lines";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Axios from "axios";
+import Container from '../components/Container'
 
 const Login = ({ showAccNav }) => {
   const url = "https://localhost:7198/api/Account/login";
@@ -36,14 +37,7 @@ const Login = ({ showAccNav }) => {
   }
 
   return (
-    <div className="login">
-      <div className="login_close">
-        <button className="login_btn" onClick={showAccNav}>
-          <Link to="/">
-            <img className="login_btn_img" src={CloseBtn} alt="close" />
-          </Link>
-        </button>
-      </div>
+    <Container>
       <div className="login_home">
         <h3 className="login_title">Log In to Your Account</h3>
         <form onSubmit={(e) => submitLogin(e)}>
@@ -62,7 +56,7 @@ const Login = ({ showAccNav }) => {
             />
           </div>
           <div className="span-cont">
-            <button className="login_span">Forgot password?</button>
+            <Link to='/forgot-password'><button className="login_span">Forgot password?</button></Link>
           </div>
           <div className="btn-cont">
             <button type="submit" className="btn_btn">
@@ -80,11 +74,14 @@ const Login = ({ showAccNav }) => {
           </Link>
         </div>
 
-        <div className="login_line">
+         <div style={{marginTop:'5rem'}}>
           <Lines />
-        </div>
+        </div> 
+
       </div>
-    </div>
+      </Container>
+    
+    
   );
 };
 
