@@ -70,6 +70,7 @@
   background-color: #1f0a27;
   font-family: "Montserrat";
   font-weight: 300;
+  color: #a29ea4;
 }
 .signup_home_inputs input::placeholder {
   font-size: 1.4rem;
